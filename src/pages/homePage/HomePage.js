@@ -6,7 +6,7 @@ const HomePage = () => (
     <h1 className={styles.title}>
       Home,sweet home...
       <span role="img" aria-label="Home">
-        🏠
+        🏡
       </span>
     </h1>
   </div>

@@ -46,8 +46,8 @@ class ContactForm extends Component {
     return (
       <>
         <form className={styles.contactForm} onSubmit={this.handleSubmit}>
-          <label htmlFor={this.nameInputId}>
-            Name
+          <label className={styles.label} htmlFor={this.nameInputId}>
+            Name:
             <input
               className={styles.input}
               type="text"
@@ -59,8 +59,8 @@ class ContactForm extends Component {
             />
           </label>
 
-          <label htmlFor={this.numberInputId}>
-            Number
+          <label className={styles.label} htmlFor={this.numberInputId}>
+            Number:
             <input
               className={styles.input}
               type="tel"

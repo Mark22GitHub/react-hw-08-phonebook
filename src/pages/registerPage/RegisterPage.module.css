@@ -16,10 +16,16 @@
   margin-bottom: 15px;
 }
 
+.input {
+  display: flex;
+  font-size: inherit;
+  margin-top: 10px;
+}
+
 .button {
   cursor: pointer;
   width: 210px;
-  padding: 5px;
+  padding: 10px;
   font-size: inherit;
   font-weight: 500;
   border-radius: 10px;

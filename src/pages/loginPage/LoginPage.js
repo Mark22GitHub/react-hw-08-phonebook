@@ -9,13 +9,23 @@ class LoginPage extends Component {
 
         <form className={styles.form} autoComplete="off">
           <label className={styles.label}>
-            E-mail
-            <input type="email" name="email" />
+            E-mail:
+            <input
+              className={styles.input}
+              type="email"
+              name="email"
+              placeholder="enter e-mail"
+            />
           </label>
 
           <label className={styles.label}>
-            Password
-            <input type="password" name="password" />
+            Password:
+            <input
+              className={styles.input}
+              type="password"
+              name="password"
+              placeholder="enter password"
+            />
           </label>
 
           <button className={styles.button} type="submit">

@@ -1,7 +1,8 @@
 .filter {
   display: flex;
   flex-direction: column;
-  width: fit-content;
+  width: 300px;
+  margin: 0 auto;
   text-align: center;
 }
 .input {

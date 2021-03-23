@@ -7,7 +7,7 @@ import { contactsOperations, contactsSelectors } from "../../redux/contacts";
 
 const ContactList = ({ contacts, onDeleteFromContacts }) => {
   return (
-    <>
+    <div className={styles.container}>
       <ul>
         {contacts.map(({ id, name, number }) => (
           <li key={id} className={styles.ContactListItem}>
@@ -23,7 +23,7 @@ const ContactList = ({ contacts, onDeleteFromContacts }) => {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 };
 

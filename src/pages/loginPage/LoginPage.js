@@ -4,7 +4,7 @@ import styles from "../loginPage/LoginPage.module.css";
 class LoginPage extends Component {
   render() {
     return (
-      <div>
+      <div className={styles.container}>
         <h1>Login Form</h1>
 
         <form className={styles.form} autoComplete="off">

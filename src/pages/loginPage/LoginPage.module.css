@@ -1,3 +1,7 @@
+.container {
+  min-height: calc(100vh - 50px);
+}
+
 .form {
   width: 320px;
   margin: 0 auto;

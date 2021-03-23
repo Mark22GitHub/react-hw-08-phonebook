@@ -14,7 +14,7 @@ class ContactsPage extends Component {
 
   render() {
     return (
-      <div style={{ width: "300px", margin: "0 auto" }}>
+      <div>
         <h1>Phonebook</h1>
         <ContactForm />
         <h2>Contacts</h2>

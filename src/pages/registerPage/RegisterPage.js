@@ -1,18 +1,6 @@
 import React, { Component } from "react";
 import styles from "../registerPage/RegisterPage.module.css";
 
-// const styles = {
-//   form: {
-//     width: 320,
-//     margin: "auto",
-//   },
-//   label: {
-//     display: "flex",
-//     flexDirection: "column",
-//     marginBottom: 15,
-//   },
-// };
-
 class RegisterPage extends Component {
   render() {
     return (

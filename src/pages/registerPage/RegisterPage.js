@@ -4,7 +4,7 @@ import styles from "../registerPage/RegisterPage.module.css";
 class RegisterPage extends Component {
   render() {
     return (
-      <div>
+      <div className={styles.container}>
         <h1>Registration Form</h1>
 
         <form className={styles.form} autoComplete="off">

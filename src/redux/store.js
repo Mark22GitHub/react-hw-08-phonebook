@@ -1,4 +1,5 @@
 import { contactsReducer } from "./contacts";
+import { authReducer } from "./auth";
 import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
 import {
   // persistStore,
@@ -26,6 +27,7 @@ const middleware = [
 
 const store = configureStore({
   reducer: {
+    auth: authReducer,
     contacts: contactsReducer,
   },
   middleware,

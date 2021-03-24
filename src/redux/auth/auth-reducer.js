@@ -4,11 +4,20 @@ import authActions from "./auth-actions";
 
 const initialUserState = { name: null, email: null };
 
-const user = createReducer(initialUserState, {});
+const user = createReducer(initialUserState, {
+  [authActions.registerSuccess]: (state, { payload }) => payload.user,
+  [authActions.loginSuccess]: (state, { payload }) => payload.user,
+});
 
-const token = createReducer(null, {});
+const token = createReducer(null, {
+  [authActions.registerSuccess]: (state, { payload }) => payload.token,
+  [authActions.loginSuccess]: (state, { payload }) => payload.token,
+});
 
-const error = createReducer(null, {});
+const error = createReducer(null, {
+  [authActions.registerError]: (state, { payload }) => payload,
+  [authActions.loginError]: (state, { payload }) => payload,
+});
 
 export default combineReducers({
   user,

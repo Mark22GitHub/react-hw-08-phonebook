@@ -24,3 +24,7 @@ h2 {
 input {
   margin-top: 10px;
 }
+
+ul {
+  padding: 0;
+}

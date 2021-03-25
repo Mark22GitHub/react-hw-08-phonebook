@@ -2,13 +2,9 @@
   min-height: calc(100vh - 50px);
 }
 
-ul {
-  padding: 0;
-}
-
-li {
+/* li {
   list-style: none;
-}
+} */
 
 .ContactListItem {
   align-items: baseline;

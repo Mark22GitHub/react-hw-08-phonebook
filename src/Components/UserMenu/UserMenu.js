@@ -7,7 +7,7 @@ import { authSelectors, authOperations } from "../../redux/auth";
 const UserMenu = ({ email, onLogout }) => (
   <div className={styles.container}>
     <span className={styles.email}>Welcome, {email}</span>
-    <button type="button" onClick={onLogout}>
+    <button className={styles.button} type="button" onClick={onLogout}>
       Logout
     </button>
   </div>

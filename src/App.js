@@ -39,6 +39,7 @@ class App extends Component {
         <Suspense fallback={<Loader />}>
           <Switch>
             <PublicRoute exact path="/" component={HomePage} />
+
             <PrivateRoute
               path="/contacts"
               redirectTo="/login"

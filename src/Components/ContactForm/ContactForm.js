@@ -40,7 +40,6 @@ class ContactForm extends Component {
   reset = () => {
     this.setState({ ...INITIAL_STATE });
   };
-  // ==================
 
   render() {
     return (

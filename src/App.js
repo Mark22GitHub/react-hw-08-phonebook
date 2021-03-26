@@ -6,6 +6,7 @@ import { connect } from "react-redux";
 import PrivateRoute from "./Components/PrivateRoute";
 import PublicRoute from "./Components/PublicRoute";
 import Loader from "./Components/Loader/Loader";
+import routes from "./routes";
 
 const HomePage = lazy(() =>
   import("./pages/homePage/HomePage" /* webpackChunkName: "Home-Page" */)
@@ -38,23 +39,23 @@ class App extends Component {
         <AppBar />
         <Suspense fallback={<Loader />}>
           <Switch>
-            <PublicRoute exact path="/" component={HomePage} />
+            <PublicRoute exact path={routes.home} component={HomePage} />
 
             <PrivateRoute
-              path="/contacts"
-              redirectTo="/login"
+              path={routes.contacts}
+              redirectTo={routes.login}
               component={ContactsPage}
             />
             <PublicRoute
-              path="/register"
+              path={routes.register}
               restricted
-              redirectTo="/contacts"
+              redirectTo={routes.contacts}
               component={RegisterPage}
             />
             <PublicRoute
-              path="/login"
+              path={routes.login}
               restricted
-              redirectTo="/contacts"
+              redirectTo={routes.contacts}
               component={LoginPage}
             />
           </Switch>

@@ -3,11 +3,12 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 import { authSelectors } from "../../redux/auth";
+import routes from "../../routes";
 
 const Navigation = ({ isAuthenticated }) => (
   <nav>
     <NavLink
-      to="/"
+      to={routes.home}
       exact
       className={styles.link}
       activeClassName={styles.activeLink}
@@ -17,7 +18,7 @@ const Navigation = ({ isAuthenticated }) => (
 
     {isAuthenticated && (
       <NavLink
-        to="/contacts"
+        to={routes.contacts}
         exact
         className={styles.link}
         activeClassName={styles.activeLink}
